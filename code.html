@@ -191,7 +191,7 @@
             // 构建完整的访问地址（假设你的页面部署在根目录）
             // 注意：这里的 `${window.location.origin}?code=` 需要你部署后根据实际地址修改
             // 首次测试，我们先直接显示编码后的结果
-            const finalCode = encoded;
+            const finalCode = "http://threekingdom.wx.ucat/" + encoded;
 
             document.getElementById('codeOutput').textContent = finalCode;
             document.getElementById('resultArea').style.display = 'block';
@@ -257,4 +257,5 @@
         };
     </script>
 </body>
+
 </html>
